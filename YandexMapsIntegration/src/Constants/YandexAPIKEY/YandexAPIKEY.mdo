@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dacaea1-2cc8-4bc0-bd74-673c276d67a8">
+  <producedTypes>
+    <managerType typeId="8d5460a3-fca8-4c60-9db4-5bdd7a386275" valueTypeId="c297c265-c3f1-413a-b51b-a4046ea9254e"/>
+    <valueManagerType typeId="d349bd48-b6ec-41df-a618-693f78b9db8d" valueTypeId="252b1972-6d0c-434d-9909-cc060ab32957"/>
+    <valueKeyType typeId="4b7ffabe-fe37-47ff-93e0-3be5938fbb46" valueTypeId="93cf0083-18fa-4434-95fa-d60931c68fda"/>
+  </producedTypes>
+  <name>YandexAPIKEY</name>
+  <synonym>
+    <key>ru</key>
+    <value>Yandex API KEY</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

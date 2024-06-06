@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5b3bd01-8bf1-47f7-8943-ed87cc7167fb">
+  <producedTypes>
+    <managerType typeId="5b1a1193-6df2-40b5-8e42-8d03f13b29c4" valueTypeId="7de571ec-4685-4ef8-8b67-cc8f71452ee8"/>
+    <valueManagerType typeId="8d25fec9-aeda-47d3-abd3-be41b07bbd7e" valueTypeId="422cadd5-97ed-4582-b58b-255fce369b4d"/>
+    <valueKeyType typeId="5b9de89a-6c46-4464-ad31-c046540c518b" valueTypeId="a17e7044-12a7-4d50-8004-6d694b700b15"/>
+  </producedTypes>
+  <name>MappableAPIKey</name>
+  <synonym>
+    <key>ru</key>
+    <value>Mappable API Key</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
