@@ -20,4 +20,12 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <templates uuid="d6d09b64-6215-4c22-a8d6-a4ca9358e787">
+    <name>ШаблонКарты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон карты</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
 </mdclass:DataProcessor>

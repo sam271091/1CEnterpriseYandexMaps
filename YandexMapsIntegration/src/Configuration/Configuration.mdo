@@ -42,5 +42,7 @@
   <constants>Constant.MappableAPIKey</constants>
   <constants>Constant.YandexAPIKEY</constants>
   <catalogs>Catalog.Адреса</catalogs>
+  <catalogs>Catalog.ТранспортныеСредства</catalogs>
   <dataProcessors>DataProcessor.ОбработкаИнтеграции</dataProcessors>
+  <informationRegisters>InformationRegister.КоординатыТранспортныхСредств</informationRegisters>
 </mdclass:Configuration>

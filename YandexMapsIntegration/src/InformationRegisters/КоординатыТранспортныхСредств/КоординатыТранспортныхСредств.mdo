@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75368e23-8e8e-4ae3-8c1e-3085d41e1d98">
+  <producedTypes>
+    <selectionType typeId="86b2dd8d-68ec-4ee5-bfe3-e21b3bfc3ab8" valueTypeId="5f8e24a5-b99d-4b03-9937-3ad67ebfedea"/>
+    <listType typeId="cfd09dc2-a9b7-4784-a276-c418f2cd1c0b" valueTypeId="cddfd0fd-aef4-4c6b-bae1-fed5863ca9a1"/>
+    <managerType typeId="d6bdc904-9207-42ac-9984-a2f73b7c0b51" valueTypeId="81fc3bcd-af12-4b89-9958-60b6697733cf"/>
+    <recordSetType typeId="31bc1a49-18de-451c-bc84-ffb0e0e30736" valueTypeId="f3e9a6dc-476e-4311-afe8-ec26769c8863"/>
+    <recordKeyType typeId="ae129228-980b-4f99-894d-8c6afb894572" valueTypeId="69fac575-42fd-4ded-9401-aff72de90bc8"/>
+    <recordType typeId="1c0c40ae-4a66-4d94-9cc9-bebd6330a217" valueTypeId="f0603bd5-e604-47be-9d9a-2cbcd1380c4e"/>
+    <recordManagerType typeId="8153c7b9-5ed3-4a1e-905c-0ea7a020b2db" valueTypeId="8508ce98-c312-413e-8fd6-63bb9d572304"/>
+  </producedTypes>
+  <name>КоординатыТранспортныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Координаты транспортных средств</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="48bfc9b8-86c9-4e04-8f39-077d6b6c7075">
+    <name>Широта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Широта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8f314d07-a01d-4b14-8eb7-05e7c9976f08">
+    <name>Долгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгота</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b11a3be7-7dfb-4edb-aec4-dff4bf0ab9d1">
+    <name>ТранспортноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТранспортныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
