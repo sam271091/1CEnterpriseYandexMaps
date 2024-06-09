@@ -15,9 +15,16 @@
         zoom: 11
       });
     }
+    
+    
+    function removeAllPoints(){
+      myMap.geoObjects.removeAll()    
+    }
 
-    function setPoints(lat,lng) {
-      var myPlacemark = new ymaps.Placemark([lat,lng]);
+    function setPoints(lat,lng,pointContent) {
+      var myPlacemark = new ymaps.Placemark([lat,lng],{
+            balloonContent: pointContent
+        });
       myMap.geoObjects.add(myPlacemark);
     }
 
