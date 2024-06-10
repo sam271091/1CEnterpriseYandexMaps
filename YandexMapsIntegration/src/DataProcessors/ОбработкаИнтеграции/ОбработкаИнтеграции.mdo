@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4a4332d-03b7-4957-9070-895ee13b97bb">
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4a4332d-03b7-4957-9070-895ee13b97bb">
   <producedTypes>
     <objectType typeId="bb6c9020-cc6e-45a4-aa31-b63d252e4d88" valueTypeId="7dcec961-dfe9-424f-8bcf-65ffbccfaf73"/>
     <managerType typeId="60117873-ddd2-4237-ab98-0af46f3de838" valueTypeId="55b5184d-0964-4a8f-adf3-c237a1548b8d"/>
@@ -11,6 +11,16 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.ОбработкаИнтеграции.Form.Форма</defaultForm>
+  <attributes uuid="348d4cde-5d30-42c7-b94c-3d1725862b09">
+    <name>ПредложенныйСписок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предложенный список</value>
+    </synonym>
+    <type/>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <forms uuid="4fb3183c-3bdb-4b38-8625-99a115cdd47a">
     <name>Форма</name>
     <synonym>

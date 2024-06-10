@@ -52,6 +52,7 @@
       <chooseType>true</chooseType>
       <typeDomainEnabled>true</typeDomainEnabled>
       <textEdit>true</textEdit>
+      <editTextUpdate>DontUse</editTextUpdate>
       <inputHint>
         <key>ru</key>
         <value>Введите адрес</value>
@@ -489,6 +490,24 @@
       <value>Поле HTML</value>
     </title>
     <id>4</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВыбранныйUri</name>
+    <title>
+      <key>ru</key>
+      <value>Выбранный uri</value>
+    </title>
+    <id>6</id>
     <valueType>
       <types>String</types>
       <stringQualifiers/>
