@@ -7,8 +7,29 @@
         center: [40.372966, 49.853128],
         zoom: 11
       });
+      
+      
+       myMap.events.add('click', function (e) {
+        if (!myMap.balloon.isOpen()) {
+            var coords = e.get('coords');
+            myMap.balloon.open(coords, {
+                contentHeader:'Новый адрес',
+                contentBody:'<p>Координаты: ' + [
+                    coords[0].toPrecision(6),
+                    coords[1].toPrecision(6)
+                    ].join(', ') + '</p>',
+                    contentFooter:'<button id="saveNewAddress" style = type="button" onclick = "createNewAddress()">Сохранить новый адрес</button>'
+            });
+        }
+        else {
+            myMap.balloon.close();
+        }
+    });
     }
     
+    function createNewAddress(){
+          
+    }
     
     function removeAllPoints(){
       myMap.geoObjects.removeAll()    
@@ -24,6 +45,12 @@
   </script><style>
     #map {
       height: 100%;
+    }
+    
+     #saveNewAddress {
+      background-color:#ffdb4d;
+      border-radius: 30px;
+      padding:10;
     }
 
     html,
