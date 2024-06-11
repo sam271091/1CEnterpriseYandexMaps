@@ -2,6 +2,7 @@
   </script><script type="text/javascript">
     ymaps.ready(init);
     var myMap = ""
+    var exchangeData = ""
     function init() {
        myMap = new ymaps.Map("map", {
         center: [40.372966, 49.853128],
@@ -12,7 +13,9 @@
        myMap.events.add('click', function (e) {
         if (!myMap.balloon.isOpen()) {
             var coords = e.get('coords');
-            myMap.balloon.open(coords, {
+            exchangeData = JSON.stringify({"lat":coords[0].toPrecision(6),
+                "lng":coords[1].toPrecision(6)})
+            myMap.balloon.open(coords, {              
                 contentHeader:'Новый адрес',
                 contentBody:'<p>Координаты: ' + [
                     coords[0].toPrecision(6),
@@ -27,8 +30,8 @@
     });
     }
     
-    function createNewAddress(){
-          
+    function createNewAddress(){       
+       interactionButton.click();   
     }
     
     function removeAllPoints(){
@@ -60,5 +63,6 @@
       padding: 0;
     }
   </style></head><body>
+   <button id="interactionButton" style="display: none">Interaction button</button>
   <div id="map"></div>
 </body></html>
