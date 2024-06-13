@@ -1,21 +1,38 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-  <title>Быстрый старт. Размещение интерактивной карты на странице</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=%apikey%&lang=ru_RU" type="text/javascript">
-  </script>
-  <script type="text/javascript">
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Быстрый старт. Размещение интерактивной карты на странице</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><script src="https://api-maps.yandex.ru/2.1/?apikey=%apikey%&amp;lang=ru_RU" type="text/javascript">
+  </script><script type="text/javascript">
     ymaps.ready(init);
     var myMap = ""
+    var exchangeData = ""
     function init() {
        myMap = new ymaps.Map("map", {
         center: [40.372966, 49.853128],
         zoom: 11
       });
+      
+      
+       myMap.events.add('click', function (e) {
+        if (!myMap.balloon.isOpen()) {
+            var coords = e.get('coords');
+            exchangeData = JSON.stringify({"lat":coords[0].toPrecision(6),
+                "lng":coords[1].toPrecision(6)})
+            myMap.balloon.open(coords, {              
+                contentHeader:'Новый адрес',
+                contentBody:'<p>Координаты: ' + [
+                    coords[0].toPrecision(6),
+                    coords[1].toPrecision(6)
+                    ].join(', ') + '</p>',
+                    contentFooter:'<button id="saveNewAddress" style = type="button" onclick = "createNewAddress()">Сохранить новый адрес</button>'
+            });
+        }
+        else {
+            myMap.balloon.close();
+        }
+    });
     }
     
+    function createNewAddress(){       
+       interactionButton.click();   
+    }
     
     function removeAllPoints(){
       myMap.geoObjects.removeAll()    
@@ -28,11 +45,15 @@
       myMap.geoObjects.add(myPlacemark);
     }
 
-  </script>
-
-  <style>
+  </script><style>
     #map {
       height: 100%;
+    }
+    
+     #saveNewAddress {
+      background-color:#ffdb4d;
+      border-radius: 30px;
+      padding:10;
     }
 
     html,
@@ -41,11 +62,7 @@
       margin: 0;
       padding: 0;
     }
-  </style>
-</head>
-
-<body>
+  </style></head><body>
+   <button id="interactionButton" style="display: none">Interaction button</button>
   <div id="map"></div>
-</body>
-
-</html>
+</body></html>
