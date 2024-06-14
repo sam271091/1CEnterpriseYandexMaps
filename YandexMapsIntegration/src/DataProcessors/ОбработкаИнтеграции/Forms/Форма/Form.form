@@ -50,6 +50,10 @@
         <event>AutoComplete</event>
         <name>СтрокаПоискаАвтоПодбор</name>
       </handlers>
+      <handlers>
+        <event>Clearing</event>
+        <name>СтрокаПоискаОчистка</name>
+      </handlers>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <wrap>true</wrap>
