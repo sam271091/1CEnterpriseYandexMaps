@@ -38,7 +38,13 @@
       myMap.geoObjects.removeAll()    
     }
 
-    function setPoints(lat,lng,pointContent) {
+    function setPoints(lat,lng,pointContent,changeZoom=false) {
+      
+      if(changeZoom){
+       myMap.setCenter([lat,lng],19)      
+      }
+      
+      
       var myPlacemark = new ymaps.Placemark([lat,lng],{
             balloonContent: pointContent
         });
