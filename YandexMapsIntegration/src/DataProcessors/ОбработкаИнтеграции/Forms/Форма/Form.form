@@ -528,10 +528,6 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ИсходнаяТочка</segments>
           </dataPath>
-          <handlers>
-            <event>OnChange</event>
-            <name>ИсходнаяТочкаПриИзменении</name>
-          </handlers>
           <extendedTooltip>
             <name>ИсходнаяТочкаРасширеннаяПодсказка</name>
             <id>36</id>
