@@ -16,7 +16,7 @@
 	Ресурс = "v1/suggest";
 
 	//@skip-check undefined-variable
-	ТелоЗапроса = СтрШаблон("?apikey=%1&text=%2&lang=az_AZ&print_address=1&attrs=uri",
+	ТелоЗапроса = СтрШаблон("?apikey=%1&text=%2&lang=az_AZ&print_address=1&attrs=uri&ll=47.954447,40.358252&spn=0.5,0.3",
 		Константы.MappableAPIKey.Получить(), ТекстПоиска);
 
 	HTTPЗапрос = Новый HTTPЗапрос(Ресурс + ТелоЗапроса, Заголовки);
